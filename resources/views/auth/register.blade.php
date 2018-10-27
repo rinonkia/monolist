@@ -9,12 +9,12 @@
                     {!! Form::open(['route' => 'signup.post']) !!}
                         <div class="form-group">
                             {!! Form::label('name','お名前') !!}
-                            {!! Form::text('name', old('name'), ['route' => 'form-control']) !!}
+                            {!! Form::text('name', old('name'), ['class' => 'form-control']) !!}
                         </div>
                         
                         <div class="form-group">
-                            {!! Form::labal('email', 'メールアドレス') !!}
-                            {!! Form::email('email', 'old('email'), ['class' => 'form-control']) !!}
+                            {!! Form::label('email', 'メールアドレス') !!}
+                            {!! Form::email('email', old('email'), ['class' => 'form-control']) !!}
                         </div>
                         
                         <div class="form-group">
@@ -23,7 +23,7 @@
                         </div>
                         
                         <div class="form-group">
-                            {!! Form::label('password_confirmation', 'パスワード(確認)' !!}
+                            {!! Form::label('password_confirmation', 'パスワード(確認)') !!}
                             {!! Form::password('password_confirmation', ['class' => 'form-control']) !!}
                         </div>
                         
@@ -35,4 +35,5 @@
             </div>
         </div>
     </div>
-@endseciton
+    
+@endsection
