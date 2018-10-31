@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('content')
+@section('cover')
     <div class="cover">
         <div class="cover-inner">
             <div class="cover-contents">
@@ -14,7 +14,6 @@
 @endsection
 
 @section('content')
-
-テスト
-
+    @include('items.items')
+    {!! $items->render() !!}
 @endsection

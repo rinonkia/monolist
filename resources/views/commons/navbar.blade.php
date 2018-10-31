@@ -15,7 +15,7 @@
                     @if (Auth::check())
                         <li>
                             <a href="{{ route('items.create') }}">
-                                <span class="glyphicon-plus" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                                 アイテムを追加
                             </a>
                         </li>
@@ -30,7 +30,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="#">マイページ</a>
+                                    <a href="{{ route('users.show', Auth::id()) }}">マイページ</a>
                                 </li>
                                 <li role="separator" class="divider"></li>
                                 <li>
