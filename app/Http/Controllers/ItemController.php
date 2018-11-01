@@ -11,6 +11,7 @@ class ItemController extends Controller
     public function create() 
     {
         $keyword = request()->keyword;
+        
         $items = [];
         if ($keyword) {
             $client = new \RakutenRws_Client();
@@ -38,6 +39,8 @@ class ItemController extends Controller
             'items' => $items,
             ]);
     }
+    
+
     
     public function show($id)
     {
